@@ -1,6 +1,6 @@
-^C:\USERS\SZYMON\DESKTOP\NOISE_GENERATOR\BUILD\CMAKEFILES\1F7B0C7270BEC6504F7DF1A0E907C2AB\GENERATE.STAMP.RULE
+^C:\USERS\SZYMON\DESKTOP\NOISEGENERATOR\BUILD\CMAKEFILES\57F528C0A8B28931C70C8F67DC9C65A1\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\cmake-4.0.1-windows-x86_64\bin\cmake.exe" -SC:/Users/Szymon/Desktop/Noise_Generator -BC:/Users/Szymon/Desktop/Noise_Generator/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Szymon/Desktop/Noise_Generator/build/NoiseGenerator.sln
+"C:\Program Files\CMake\cmake-4.0.1-windows-x86_64\bin\cmake.exe" -SC:/Users/Szymon/Desktop/noisegenerator -BC:/Users/Szymon/Desktop/noisegenerator/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Szymon/Desktop/noisegenerator/build/NoiseGenerator.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

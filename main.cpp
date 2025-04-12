@@ -1,10 +1,10 @@
+#include "inc/image.h"
+#include "inc/piDigit.h"
+
 #include <iostream>
 #include <cstdint>
 #include <limits>
 #include <vector>
-
-#include "image.h"
-#include "piDigit.h"
 
 // 8k resolution, 7680x4320, maximum number of pixels is 33,177,600
 #define MAX_WIDTH 7680
@@ -43,7 +43,7 @@ int main() {
     Image image(width, height);
     for (int y = 0; y < height; y++) { 
         for (int x = 0; x < width; x++) {
-            float piValue = piDigitCalculate(x, y, width, height);
+            float piValue = normalizedPiDigitCalculate(x, y, width);
             image.SetColor(Color(piValue, piValue, piValue), x, y);
         }
     }

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Szymon\Desktop\Noise_Generator\build\CMakeFiles\1f7b0c7270bec6504f7df1a0e907c2ab\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\Szymon\Desktop\noisegenerator\build\CMakeFiles\57f528c0a8b28931c70c8f67dc9c65a1\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{85E48DEA-5C96-3FB5-BA01-FF8B214C6DCE}</UniqueIdentifier>
+      <UniqueIdentifier>{3EB3A349-539E-37CA-ADDE-5E93E6976F9A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
