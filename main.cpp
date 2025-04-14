@@ -47,6 +47,6 @@ int main() {
             image.SetColor(Color(piValue, piValue, piValue), x, y);
         }
     }
-    image.Export("output.bmp");
+    image.Export("../out/output.bmp");
     return 0;
 }
