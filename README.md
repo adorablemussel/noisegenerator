@@ -20,8 +20,16 @@ Each digit from 0 to 9 maps linearly to a brightness level:
   
 </div>
 
-After processing the digits, the result is saved as a `.bmp` image like the one below:
+After processing the digits, the result is saved as a `.bmp` image like the ones below:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1fae23a5-b357-4caa-afa0-0ead2e4c621e" alt="Pi Noise Example">
+  <img src="https://github.com/user-attachments/assets/1fae23a5-b357-4caa-afa0-0ead2e4c621e" alt="Pi Noise Example 1">
+  <br>
+  60x40
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a191f514-319f-450a-8c6e-794435b9b7cb" alt="Pi Noise Example 2">
+  <br>
+  1280x720
 </p>
