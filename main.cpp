@@ -5,6 +5,8 @@
 #include <cstdint>
 #include <limits>
 #include <vector>
+#include <string>
+#include <filesystem>
 
 // 8k resolution, 7680x4320, maximum number of pixels is 33,177,600
 #define MAX_WIDTH 7680
@@ -28,10 +30,10 @@ void dimensionAssign(int16_t& value, int maxDimension){
 int main() {
     int16_t width, height;
 
-    std::cout << "WIDTH" << std::endl;
+    std::cout << "WIDTH (in pixels)" << std::endl;
     dimensionAssign(width, MAX_WIDTH);
     std::cout << std::endl;
-    std::cout << "HEIGHT" << std::endl;
+    std::cout << "HEIGHT (in pixels)" << std::endl;
     dimensionAssign(height, MAX_HEIGHT);
     std::cout << std::endl;
 
@@ -47,6 +49,10 @@ int main() {
             image.SetColor(Color(piValue, piValue, piValue), x, y);
         }
     }
-    image.Export("../out/output.bmp");
+
+    std::filesystem::create_directories("../out");
+    std::string filename = "../out/output_" + std::to_string(width) + "x" + std::to_string(height) + ".bmp";
+    image.Export(filename.c_str());
+
     return 0;
 }
