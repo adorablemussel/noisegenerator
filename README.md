@@ -36,6 +36,10 @@ After processing the digits, the result is saved as a `.bmp` image like the ones
 
 ## ▶️ How to Run
 
+**Download the entire repository or just the `Debug` folder. Then double click `NoiseGenerator.exe` file.**
+
+## 🔧 If You Want To Build It Yourself
+
 ### Prerequisites
 
 Before building and running the project, make sure you have the following installed on your system:
@@ -74,6 +78,6 @@ Before building and running the project, make sure you have the following instal
 
  ### Running the Program
 
-   After a successful build, run the executable (typically located in the Debug folder):
+   After a successful build, run the executable located in the Debug folder:
    ```bash
    .\Debug\NoiseGenerator.exe
