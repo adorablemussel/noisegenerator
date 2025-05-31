@@ -33,3 +33,47 @@ After processing the digits, the result is saved as a `.bmp` image like the ones
   <br>
   1280x720
 </p>
+
+## ▶️ How to Run
+
+### Prerequisites
+
+Before building and running the project, make sure you have the following installed on your system:
+
+1. **CMake**  
+   Tool for generating build systems for C++.  
+   Download: [https://cmake.org/download/](https://cmake.org/download/)
+
+2. **C++ Compiler**  
+   For example:
+   - **Visual Studio 2019/2022** with the *Desktop development with C++* workload
+   - Or another compiler that supports C++17 (e.g., g++, clang)
+
+3. **vcpkg** – C++ package manager  
+   This project uses libraries installed via vcpkg.  
+   Installation guide: [https://github.com/microsoft/vcpkg](https://github.com/microsoft/vcpkg)
+
+### Building the Project
+
+1. Open a terminal (`cmd`, PowerShell, or terminal in Visual Studio Code).
+2. Navigate to the `build` directory in the project root:
+   ```bash
+   cd build
+3. Run CMake with the vcpkg toolchain file:
+
+   Find the path to your vcpkg.cmake file...
+
+   ```bash
+   cmake .. -DCMAKE_TOOLCHAIN_FILE=[...AND PASTE IT HERE]
+
+   # mine is:
+   cmake .. -DCMAKE_TOOLCHAIN_FILE=C:/Libraries/vcpkg/scripts/buildsystems/vcpkg.cmake
+5. Build the project:
+   ```bash
+   cmake --build .
+
+ ### Running the Program
+
+   After a successful build, run the executable (typically located in the Debug folder):
+   ```bash
+   .\Debug\NoiseGenerator.exe
