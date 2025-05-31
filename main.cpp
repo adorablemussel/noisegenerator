@@ -50,8 +50,17 @@ int main() {
         }
     }
 
-    std::filesystem::create_directories("../out");
-    std::string filename = "../out/output_" + std::to_string(width) + "x" + std::to_string(height) + ".bmp";
+    std::filesystem::path outDir;
+    if (std::filesystem::exists("../out") && std::filesystem::is_directory("../out")) {
+        outDir = "../out";
+    } else {
+        outDir = "out";
+        if (!std::filesystem::exists(outDir)) {
+            std::filesystem::create_directory(outDir);
+        }
+    }
+
+    std::string filename = (outDir / ("output_" + std::to_string(width) + "x" + std::to_string(height) + ".bmp")).string();
     image.Export(filename.c_str());
 
     return 0;
