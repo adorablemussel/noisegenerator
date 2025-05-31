@@ -36,7 +36,16 @@ After processing the digits, the result is saved as a `.bmp` image like the ones
 
 ## ▶️ How to Run
 
-**Download the entire repository or just the `Debug` folder. Then double click `NoiseGenerator.exe` file.**
+**Download the entire repository or just the `/Debug` folder. Then double-click on `NoiseGenerator.exe` file.**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b1c14d87-622a-4336-8c2c-0073a0f312cb" alt="Terminal" width=420px>
+  <br>
+  Running via terminal
+</p>
+
+
+**Your output files will appear in `/out` folder.**
 
 ## 🔧 If You Want To Build It Yourself
 
